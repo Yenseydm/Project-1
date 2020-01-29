@@ -83,7 +83,7 @@ am4core.ready(function () {
 
 	// grabs the country id for geoDB api 
 		countryid = ev.target.dataItem.dataContext.id
-
+		// settings to pass to ajax call
 		var geoDBsettings = {
 			"async": true,
 			"crossDomain": true,
@@ -97,6 +97,25 @@ am4core.ready(function () {
 	// geoDB ajax call
 		$.ajax(geoDBsettings).done(function (response) {
 			console.log(response);
+			// variables set from ajax response object
+			var numRegions = response.data.numRegions;
+			var currency = response.data.currencyCodes[0];
+			var flag = response.data.flagImageUri;
+
+			// inital tag creation
+			var regionInfo = $("<p>").text("Number of regions: " + numRegions);
+			var currencyInfo = $("<p>").text("Currency: " + currency)
+			var countryFlag = $("<img>").attr("src", flag);
+			countryFlag.addClass("flag-img");
+
+			// appending tags to the overall div
+			var dataDump = $("<div>");
+			dataDump.append(regionInfo);
+			dataDump.append(currencyInfo);
+			dataDump.append(countryFlag);
+
+			// appending dataDump to popup
+			$(".ampopup-inside").append(dataDump);
 		});
 
 
