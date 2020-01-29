@@ -81,7 +81,7 @@ am4core.ready(function () {
 		popup.top = ev.svgPoint.y + 15;
 		$(".ampopup-header").hide();
 
-		// grabs the country id for geoDB api 
+	// grabs the country id for geoDB api 
 		countryid = ev.target.dataItem.dataContext.id
 
 		var geoDBsettings = {
@@ -94,7 +94,7 @@ am4core.ready(function () {
 				"x-rapidapi-key": "8c82e4dd37msh31e61bbc05c60afp12c20fjsn273f40e54380"
 			}
 		}
-		// geoDB ajax call
+	// geoDB ajax call
 		$.ajax(geoDBsettings).done(function (response) {
 			console.log(response);
 		});
@@ -104,10 +104,10 @@ am4core.ready(function () {
 
 		// THIS IS WHERE YOU PUT EVENTS TIED TO POPUP
 		// chart.modal.events.on("opened", function(ev) {
+
 		// 	console.log(ev);
 		//   });
 
-		// SEARCH FUNCTION
 
 
 
@@ -115,6 +115,7 @@ am4core.ready(function () {
 	});
 
 
+	// SEARCH FUNCTION
 
 
 	var inputTextValue = ("link-box").value;
