@@ -2,7 +2,7 @@
 
 # The bucket
 
-This web application is made to allow users to document their  [Demo](https://young-plains-88015.herokuapp.com).
+This web application is made to allow users to document their  [Demo](https://yenseydm.github.io/Project-1/).
 
 * Deployed with Heroku
 
