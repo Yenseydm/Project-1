@@ -2,7 +2,7 @@
 
 # The bucket
 
-This web application is made to allow users to document their  [Demo](https://yenseydm.github.io/Project-1/).
+This web application is made to allow users to document their bucket list! Whether it's a restraunt they've always wanted to visit or a country the user has crossed off their bucket list. Users are also able to add a review/description of the place they've listed, along with add photos.[Demo](https://yenseydm.github.io/The-Bucket/).
 
 * Deployed with Heroku
 
